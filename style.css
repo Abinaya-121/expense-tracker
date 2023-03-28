@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-white:#ffffff;
+    --clr-black:#2e2d2d;
+    --clr-light-black:#6c757d;
+}
+body{
+    background-color: var(--clr-white);
+    color: var(--clr-white); 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.main-container{
+    background-color: var(--clr-black);
+    margin: 30px auto;
+    width:350px;
+    padding:2rem;
+}
+
+h1{
+    letter-spacing: 1px;
+    margin: 0;
+}
+h3{
+    border-bottom: 1px solid var(--clr-black);
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+h4{
+    margin: 0;
+    text-transform: uppercase;
+    color:var(--clr-black)
+}
+.income-expense-container{
+    background-color: var(--clr-white);
+    box-shadow: 1rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin:20px
+}
+.income-expense-container > div{
+    flex: 1;
+    text-align: center;
+}
+
+.money{
+    font-size: 2;
+    letter-spacing: 1px;
+}
+
+.money_plus{
+    color: green;
+}
+.money_minus{
+    color:red;
+}
+input[type="text"],input[type="number"]{
+    border:1px solid var(--clr-white);
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width:100%;
+}
+.submit{
+    cursor:pointer;
+    background-color: var(--clr-light-black);
+    box-shadow:1rem;
+    border:0;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width:100%;
+    margin-top: 10px;
+}
+.submit:focus,.btn-delete:focus{
+    outline:0;
+
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.list li{
+    background-color: #ffffff;
+    box-shadow: 20px;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 30px;
+}
+.list li.plus{
+    border-right:5px solid green;
+}
+.list li.minus{
+    border-right: 5px solid red;
+}
+.btn-delete{
+    cursor: pointer;
+    background-color: red;
+    
+}
